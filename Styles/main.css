@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  background-color:lightblue;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+nav ul li a{
+  position: relative;
+  display: inline-block;
+  padding: 23px 15px;
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  width: 120px;
+  }
+  nav ul li a:hover{
+  background-color: white;
+  width: 120px;
+  transition-duration: 0.5s;
+}
+nav ul li a div{
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  border: solid 2px black;
+  transform: scale(1.15);
+  opacity: 0;
+  transition: all .3s linear;
+}
+nav ul li a:hover div{
+  transform: scale(1);
+  opacity: 1;
+}
+nav ul li a.active div{
+  transform: scale(1);
+  opacity: 1;
+}
+  .active{
+  background-color: white;
+  }
+.page {
+  background-color: lightseagreen;
+  height: 150px;
+}
+.page h1{
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif
+}
+.page section{
+  background-color: blanchedalmond;
+  height: 350px;
+  padding: 50px;
+}
+.page section article{
+  position: relative;
+  background-color: blanchedalmond;
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 7px;
+}
+.page section article div
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(6, 197, 156, 0.5);
+  height: 350px;
+  width: 500px;
+  text-align: center;
+  transform: scale(0);
+  transition: all .5s;
+}
+.page section article:hover div{
+  transform: scale(1);
+}
+.page section article div h1{
+  text-align: center;
+  color: black;
+  transform: translateY(-80px);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.page section article:hover div h1{
+  opacity: 1;
+  transform: translateY(0px);
+}
+.page section article div p{
+  text-align: center;
+  color: black;
+  text-align: justify;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0px 60px;
+  transform: translateY(80px);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: 0.5s;
+}
+.page section article:hover div p{
+  opacity: 1;
+  transform: translateY(0px);
+}
+.page section article div a{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 40px;
+  padding: 15px 25px;
+  display: inline-block;
+  background-color: cyan;
+  text-align: center;
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.page section article:hover div a{
+  opacity: 1;
+}
+.page section article img{
+  transition: all .3s linear;
+}
+.page section article:hover img{
+  transform: scale(1.2); 
+}
+.page2 {
+  background-color: lightseagreen;
+  height: 150px;
+}
+.page2 h1{
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif
+}
+.page2 section{
+  background-color: blanchedalmond;
+  height: 350px;
+  padding: 50px;
+}
+.page2 section article{
+  position: relative;
+  background-color: blanchedalmond;
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 7px;
+}
+.page2 section article div
+{
+  position : absolute;
+  top: 0;
+  background-color: rgba(17, 124, 211, 0.5);
+  height: 350px;
+  width: 500px;
+  text-align: center;
+  overflow: hidden;
+  transform: rotate(90deg) translate(425px, -425px);
+  transition: all .5s;
+}
+.page2 section article:hover div{
+  transform: rotate(0deg) translate(0px, 0px)
+}
+.page2 section article div h1{
+  text-align: center;
+  color: black;
+  transform: translateX(200px) translateY(-30px);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.page2 section article:hover div h1{
+    opacity: 1;
+    transform: translate(0px);
+}
+.page2 section article div p{
+  text-align: center;
+  color: black;
+  text-align: justify;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0px 60px;
+  transform: translateY(80px) translateX(-200px);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: 0.5s;
+}
+.page2 section article:hover div p{
+  opacity: 1;
+  transform: translate(0px);
+}
+.page2 section article div a{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 40px;
+  padding: 15px 25px;
+  display: inline-block;
+  background-color: cyan;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.page2 section article:hover div a{
+  opacity: 1;
+  transform: translate(0px);
+}
+.page2 section article img{ 
+  margin-left: -80px;
+}
+.page3 {
+  background-color: lightseagreen;
+  height: 150px;
+}
+.page3 h1{
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif
+}
+.page3 section{
+  background-color: blanchedalmond;
+  height: 350px;
+  padding: 50px;
+}
+.page3 section article{
+  position: relative;
+  background-color: blanchedalmond;
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 7px;
+}
+.page3 section article div
+{
+  position: absolute;
+  top: 0;
+  background-color: rgba(168, 243, 146, 0.5);
+  height: 350px;
+  width: 500px;
+  text-align: center;
+  overflow: hidden;
+  transform: rotate(90deg) translate(-425px, -425PX);
+  transition: all .5s;
+}
+.page3 section article:hover div{
+  transform: rotate(0deg) translate(0px, 0px)
+}
+.page3 section article div h1{
+  text-align: center;
+  color: black;
+  transform: translateX(-200px) translateY(-300px) rotate(-90deg);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.page3 section article:hover div h1{
+  opacity: 1;
+  transform: translate(0px) rotate(0deg);
+}
+.page3 section article div p{
+  text-align: center;
+  color: black;
+  text-align: justify;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0px 60px;
+  transform: translateY(-320px) translateX(200px) rotate(90deg);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: 0.5s;
+}
+.page3 section article:hover div p{
+  opacity: 1;
+  transform: translate(0px) rotate(0deg);
+}
+.page3 section article div a{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 40px;
+  padding: 15px 25px;
+  display: inline-block;
+  background-color: cyan;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-180px);
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.page3 section article:hover div a{
+  opacity: 1;
+  transform: translate(0px);
+}
+.page3 section article img{
+  transition: all .3s linear;
+}
+.page3 section article:hover img{
+  transform: scale(1.2) rotate(-5deg); 
+}
+.page4 {
+  background-color: lightseagreen;
+  height: 150px;
+}
+.page4 h1{
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif
+}
+.page4 section{
+  background-color: blanchedalmond;
+  height: 350px;
+  padding: 50px;
+}
+.page4 section article{
+  position: relative;
+  background-color: blanchedalmond;  
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 7px;
+}
+.page4 section article div
+{
+  position: absolute;
+  top: 0;
+  background-color: rgba(252, 249, 104, 0.5);
+  height: 350px;
+  width: 500px;
+  text-align: center;
+  overflow: hidden;
+  transform: rotate(720deg) scale(0);
+  transition: all .5s;
+}
+.page4 section article:hover div{
+    transform: rotate(0deg) scale(1);
+}
+.page4 section article div h1{
+  text-align: center;
+  color: black;
+  transform: translateX(500px);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.page4 section article:hover div h1{
+  opacity: 1;
+  transform: translate(0px);
+}
+.page4 section article div p{
+  text-align: center;
+  color: black;
+  text-align: justify;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0px 60px;
+  transform: translateX(-500px);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: 0.5s;
+}
+.page4 section article:hover div p{
+  opacity: 1;
+  transform: translate(0px);
+}
+.page4 section article div a{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 40px;
+  padding: 15px 25px;
+  display: inline-block;
+  background-color: cyan;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.page4 section article:hover div a{
+  opacity: 1;
+  transform: translate(0px);
+}
+.page4 section article img{
+  transition: all .3s linear;
+}
+.page4 section article:hover img{
+  transform: scale(1.2); 
+}
+.page5 {
+  background-color: lightseagreen;
+  height: 150px;
+}
+.page5 h1{
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif
+}
+.page5 section{
+  background-color: blanchedalmond;
+  height: 350px;
+  padding: 50px;  
+}
+.page5 section article{
+  position: relative;
+  background-color: blanchedalmond;  
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 7px;
+}
+.page5 section article div
+{
+  position: absolute;
+  top: 0;
+  background-color: rgba(197, 173, 116, 0.712);
+  height: 350px;
+  width: 500px;
+  text-align: center;
+  overflow: hidden;
+  transform: translate(-500px, 350px);
+  transition: all .5s;
+}
+.page5 section article:hover div{
+  transform: scale(1);
+}
+.page5 section article div h1{
+  text-align: center;
+  color: black;
+  transform: rotate(720deg);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.page5 section article:hover div h1{
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.page5 section article div p{
+  text-align: center;
+  color: black;
+  text-align: justify;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0px 60px;
+  transform: translate(-500px, 200px);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 1s;
+}
+.page5 section article:hover div p{
+  opacity: 1;
+  transform: translate(0px);
+}
+.page5 section article div a{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 40px;
+  padding: 15px 25px;
+  display: inline-block;
+  background-color: cyan;
+  text-align: center;
+  opacity: 0;
+  transform: rotate(720deg);
+  transition: all 0.5s;
+  transition-delay: 1s;
+}
+.page5 section article:hover div a{
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.page6 {
+  background-color: lightseagreen;
+  height: 150px;
+}
+.page6 h1{
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif
+}
+.page6 section{
+  background-color: blanchedalmond;
+  height: 350px;
+  padding: 50px;
+}
+.page6 section article{
+  position: relative;
+  background-color: blanchedalmond;
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 7px;
+}
+.page6 section article div
+{
+    position: absolute;
+    top: 0;
+    background-color: rgba(9, 194, 250, 1);
+    height: 350px;
+    width: 500px;
+    text-align: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: all .5s;
+}
+.page6 section article:hover div{
+    transform: scale(1);
+}
+.page6 section article div h1{
+  text-align: center;
+  color: black;
+  transform: scale(0);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.page6 section article:hover div h1{
+  opacity: 1;
+  transform: scale(1);
+}
+.page6 section article div p{
+  text-align: center;
+  color: black;
+  text-align: justify;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0px 60px;
+  transform: scale(0);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.page6 section article:hover div p{
+  opacity: 1;
+  transform: scale(1);
+}
+.page6 section article div a{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 40px;
+  padding: 15px 25px;
+  display: inline-block;
+  background-color: cyan;
+  text-align: center;
+  opacity: 0;
+  transform: rotate(720deg);
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.page6 section article:hover div a{
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.page6 section article img{
+  transition: all .3s;
+  
+}
+.page6 section article:hover img{
+  opacity: 0;
+  transform: scale(2);
+}
